@@ -38,22 +38,33 @@ public class InClass01 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 float weightVal;
-                int feet;
+                int feet=0;
                 int inches = 0;
                 float heightTotal;
-                if (String.valueOf(weight.getText()).equals("") || String.valueOf(height_feet.getText()).equals("")) {
-                    Toast.makeText(InClass01.this, "Empty Value for Weight or Height !!", Toast.LENGTH_SHORT).show();
+                if (String.valueOf(weight.getText()).equals("")) {
+                    Toast.makeText(InClass01.this, "Empty Value for Weight !!", Toast.LENGTH_SHORT).show();
+                }
+                else if (String.valueOf(height_feet.getText()).equals("") && String.valueOf(height_inches.getText()).equals("") )
+                {
+                    Toast.makeText(InClass01.this, "Empty Value for for Height !!", Toast.LENGTH_SHORT).show();
+
                 }
                 else {
                     weightVal = Float.parseFloat(String.valueOf(weight.getText()));
-                    feet = Integer.parseInt(String.valueOf(height_feet.getText()));
                     String inches_text =String.valueOf(height_inches.getText());
+                    String feet_text = String.valueOf(height_feet.getText());
 
                     if(!inches_text.equals(""))
                     {
                         inches = Integer.parseInt(inches_text);
                     }
-                    heightTotal = feet * 12 + inches;
+
+                    if(!feet_text.equals(""))
+                    {
+                        feet = Integer.parseInt(feet_text);
+                    }
+
+                    heightTotal = (feet * 12) + inches;
 
                     if (weightVal <= 0) {
                         Toast.makeText(InClass01.this, "Invalid Weight Value !!", Toast.LENGTH_SHORT).show();
