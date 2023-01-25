@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">InClass_Sankara_Narayanan_002787959</string>
     <string name="Assignment1">Assignment1</string>
+    <string name="InClass01_btn">InClass01</string>
+    <string name="BMI_label">Body Mass Index (BMI)</string>
+    <string name="weight_text">Weight</string>
+    <string name="lb_text">lb</string>
+    <string name="height_text">Height</string>
+    <string name="hint_weight">weight in pounds</string>
+    <string name="feet_hint">feet</string>
+    <string name="inches_hint">inches</string>
+    <string name="feet_text">feet</string>
+    <string name="Inches_text">inches</string>
+    <string name="click_calculate">"Click On Calculate BMI to find your BMI "</string>
 </resources>
