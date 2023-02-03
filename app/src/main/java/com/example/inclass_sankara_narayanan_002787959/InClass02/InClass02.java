@@ -169,31 +169,4 @@ public class InClass02 extends AppCompatActivity {
             return R.drawable.awesome;
         }
     }
-// Practice Work
-//    @Override
-//    protected void onResume()
-//    {
-//        super.onResume();
-//        Log.d(Tag,"OnRsesume called");
-//    }
-//    @Override
-//    protected void onStart()
-//    {
-//        super.onStart();
-//        Log.d(Tag,"OnStart Called");
-//    }
-//
-//    @Override
-//    protected void onPause()
-//    {
-//        super.onPause();
-//        Log.d(Tag,"OnPause Called");
-//    }
-//
-//    @Override
-//    protected void onStop()
-//    {
-//        super.onStop();
-//        Log.d(Tag,"OnStop Called");
-//    }
 }
