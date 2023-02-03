@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InClass02.SelectAvatar">
+
+    <TextView
+        android:id="@+id/selectAvatarId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/selectAvatar"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/avatar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectAvatarId"
+        app:srcCompat="@drawable/avatar_f_1" />
+
+    <ImageButton
+        android:id="@+id/avatar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/avatar1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/avatar1"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/avatar_f_2" />
+
+    <ImageButton
+        android:id="@+id/avatar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/avatar1"
+        app:layout_constraintStart_toStartOf="@+id/avatar1"
+        app:layout_constraintTop_toBottomOf="@+id/avatar1"
+        app:srcCompat="@drawable/avatar_f_3" />
+
+    <ImageButton
+        android:id="@+id/avatar4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/avatar3"
+        app:layout_constraintEnd_toEndOf="@+id/avatar2"
+        app:layout_constraintTop_toTopOf="@+id/avatar3"
+        app:srcCompat="@drawable/avatar_m_1" />
+
+    <ImageButton
+        android:id="@+id/avatar5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/avatar3"
+        app:layout_constraintStart_toStartOf="@+id/avatar3"
+        app:layout_constraintTop_toBottomOf="@+id/avatar3"
+        app:srcCompat="@drawable/avatar_m_2" />
+
+    <ImageButton
+        android:id="@+id/avatar6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/avatar5"
+        app:layout_constraintEnd_toEndOf="@+id/avatar4"
+        app:layout_constraintTop_toTopOf="@+id/avatar5"
+        app:srcCompat="@drawable/avatar_m_3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

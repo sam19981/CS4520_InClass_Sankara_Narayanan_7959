@@ -12,4 +12,12 @@
     <string name="feet_text">feet</string>
     <string name="Inches_text">inches</string>
     <string name="click_calculate">"Click On Calculate BMI to find your BMI "</string>
+    <string name="email_hint">EmailId:</string>
+    <string name="nameclass02hint">Name</string>
+    <string name="RadioButtonText">I use</string>
+    <string name="currentMood">Your current mood:</string>
+    <string name="androidText">Android</string>
+    <string name="iosText">Ios</string>
+    <string name="selectAvatar">Select your Avatar</string>
+    <string name="name_holder">Name:</string>
 </resources>
