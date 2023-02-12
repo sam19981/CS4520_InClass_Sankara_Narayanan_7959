@@ -20,4 +20,10 @@
     <string name="iosText">Ios</string>
     <string name="selectAvatar">Select your Avatar</string>
     <string name="name_holder">Name:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email_hint_frag">Email</string>
+    <string name="inClass03">InClass03</string>
+    <string name="submit">Submit</string>
+    <string name="I_use_text">I use</string>
 </resources>

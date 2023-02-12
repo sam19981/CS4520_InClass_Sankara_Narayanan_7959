@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.inclass_sankara_narayanan_002787959.InClass02.InClass02;
+import com.example.inclass_sankara_narayanan_002787959.InClass03.InClass03;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     Button InClass01_btn;
 
     Button InClass02_btn;
+
+    Button InClass03_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
         InClass02_btn = findViewById(R.id.inClass02);
 
+        InClass03_btn = findViewById(R.id.inClass03);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,6 +55,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent newIntent = new Intent(MainActivity.this, InClass02.class);
+                startActivity(newIntent);
+            }
+        });
+
+        InClass03_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent newIntent = new Intent(MainActivity.this, InClass03.class);
                 startActivity(newIntent);
             }
         });

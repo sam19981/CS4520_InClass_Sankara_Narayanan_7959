@@ -1,7 +1,7 @@
 package com.example.inclass_sankara_narayanan_002787959.InClass02;
 
 // Sankara Narayanan Rajagopal
-//InClass02
+// InClass02
 
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
@@ -32,12 +32,11 @@ public class InClass02 extends AppCompatActivity {
     final static String statusText[] ={"Angry","Sad","Happy","Awesome"};
     private ImageButton avatarButton;
     static String imageResid = "result";
-    SeekBar status;
-    Button submit;
+    private SeekBar status;
+    private Button submit;
     private int statusint = 3;
     private int imgResIdval = 0;
     private String operatingSys = "Android";
-
 
     ActivityResultLauncher<Intent> getAvatar = registerForActivityResult(new ActivityResultContracts.StartActivityForResult()
             , new ActivityResultCallback<ActivityResult>() {
