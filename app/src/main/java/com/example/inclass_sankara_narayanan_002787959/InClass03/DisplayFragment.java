@@ -36,6 +36,8 @@ public class DisplayFragment extends Fragment {
 
     private String opSysText = "I use %s!";
 
+    private String tittle = "Edit Profile Activity";
+
     private ImageView bioDp ;
     private ImageView statusIcon ;
     private TextView name ;
@@ -81,7 +83,7 @@ public class DisplayFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View  view = inflater.inflate(R.layout.fragment_dislay, container, false);
-
+         getActivity().setTitle(tittle);
          bioDp = view.findViewById(R.id.fragAvtId);
          statusIcon = view.findViewById(R.id.fragMoodIcon);
          name = view.findViewById(R.id.textView12);

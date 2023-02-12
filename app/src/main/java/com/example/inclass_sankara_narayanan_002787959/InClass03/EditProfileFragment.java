@@ -59,6 +59,8 @@ public class EditProfileFragment extends Fragment {
 
     private int statusint = 3;
 
+    private String tittle = "Edit Profile Activity";
+
     final static String statusText[] = {"Angry", "Sad", "Happy", "Awesome"};
 
     public EditProfileFragment() {
@@ -98,7 +100,7 @@ public class EditProfileFragment extends Fragment {
         // Inflate the layout for this fragment
 
         View view = inflater.inflate(R.layout.fragment_edit_profile, container, false);
-
+        getActivity().setTitle(tittle);
         nameEditBox = view.findViewById(R.id.nameId);
         emailEditBox = view.findViewById(R.id.emailId);
         avatar = view.findViewById(R.id.imageButtonId);

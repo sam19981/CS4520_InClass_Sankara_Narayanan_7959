@@ -30,6 +30,8 @@ public class SelectAvatarFragment extends Fragment implements View.OnClickListen
     private String mParam1;
     private String mParam2;
 
+    private String tittle = "Select Avatar";
+
     ImageButton avatar1;
     ImageButton avatar2;
     ImageButton avatar3;
@@ -73,6 +75,8 @@ public class SelectAvatarFragment extends Fragment implements View.OnClickListen
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_select_avatar, container, false);
+
+        getActivity().setTitle(tittle);
 
         avatar1 = view.findViewById(R.id.imageButton2);
         avatar1.setOnClickListener(this);
