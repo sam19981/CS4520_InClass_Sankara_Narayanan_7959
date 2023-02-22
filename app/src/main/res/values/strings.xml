@@ -26,4 +26,11 @@
     <string name="inClass03">InClass03</string>
     <string name="submit">Submit</string>
     <string name="I_use_text">I use</string>
+    <string name="InClass04">InClass04</string>
+    <string name="slect_complex">Select Complexcity:</string>
+    <string name="generate_number_text">Generate Number</string>
+    <string name="min_text">Minimum:</string>
+    <string name="max_text">Maximum:</string>
+    <string name="Average_text">Average:</string>
+    <string name="InClass05">InClass05</string>
 </resources>
