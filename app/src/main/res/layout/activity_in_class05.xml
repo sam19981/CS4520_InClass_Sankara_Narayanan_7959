@@ -6,4 +6,70 @@
     android:layout_height="match_parent"
     tools:context=".InClass05.InClass05">
 
+    <EditText
+        android:id="@+id/search_box"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="Keyword"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/go_btn"
+        app:layout_constraintEnd_toStartOf="@+id/go_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/go_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/go_btn_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="24dp" />
+
+    <ImageView
+        android:id="@+id/dispImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/go_btn"
+        app:layout_constraintStart_toStartOf="@+id/search_box"
+        app:layout_constraintTop_toBottomOf="@+id/search_box"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/prevBtn"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FDFCFC"
+        app:layout_constraintStart_toStartOf="@+id/dispImg"
+        app:layout_constraintTop_toBottomOf="@+id/dispImg"
+        app:srcCompat="@drawable/previous" />
+
+    <ImageButton
+        android:id="@+id/nextBtn"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FAF8F8"
+        app:layout_constraintEnd_toEndOf="@+id/dispImg"
+        app:layout_constraintTop_toBottomOf="@+id/dispImg"
+        app:srcCompat="@drawable/next" />
+
+    <ProgressBar
+        android:id="@+id/spiralProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/dispImg"
+        app:layout_constraintEnd_toEndOf="@+id/dispImg"
+        app:layout_constraintStart_toStartOf="@+id/dispImg"
+        app:layout_constraintTop_toTopOf="@+id/dispImg" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

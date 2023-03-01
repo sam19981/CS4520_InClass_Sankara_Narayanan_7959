@@ -13,6 +13,7 @@ import android.widget.Button;
 import com.example.inclass_sankara_narayanan_002787959.InClass02.InClass02;
 import com.example.inclass_sankara_narayanan_002787959.InClass03.InClass03;
 import com.example.inclass_sankara_narayanan_002787959.InClass04.InClass04;
+import com.example.inclass_sankara_narayanan_002787959.InClass05.InClass05;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -80,6 +81,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent newIntent = new Intent(MainActivity.this, InClass04.class);
+                startActivity(newIntent);
+            }
+        });
+
+        InClass05_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent newIntent = new Intent(MainActivity.this, InClass05.class);
                 startActivity(newIntent);
             }
         });
