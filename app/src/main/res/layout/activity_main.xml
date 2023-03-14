@@ -80,4 +80,14 @@
         app:layout_constraintStart_toStartOf="@+id/inClass04"
         app:layout_constraintTop_toBottomOf="@+id/inClass04" />
 
+    <Button
+        android:id="@+id/InClass06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/InClass06_text"
+        app:layout_constraintEnd_toEndOf="@+id/InClass05"
+        app:layout_constraintStart_toStartOf="@+id/InClass05"
+        app:layout_constraintTop_toBottomOf="@+id/InClass05" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

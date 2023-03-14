@@ -34,4 +34,7 @@
     <string name="Average_text">Average:</string>
     <string name="InClass05">InClass05</string>
     <string name="go_btn_text">GO</string>
+    <string name="InClass06_text">InClass06</string>
+    <string name="Country_text">Country</string>
+    <string name="Category_text">Category</string>
 </resources>

@@ -14,6 +14,7 @@ import com.example.inclass_sankara_narayanan_002787959.InClass02.InClass02;
 import com.example.inclass_sankara_narayanan_002787959.InClass03.InClass03;
 import com.example.inclass_sankara_narayanan_002787959.InClass04.InClass04;
 import com.example.inclass_sankara_narayanan_002787959.InClass05.InClass05;
+import com.example.inclass_sankara_narayanan_002787959.InClass06.InClass06;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
     Button InClass04_btn;
 
     Button InClass05_btn;
+
+    Button InClass06_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
         InClass04_btn = findViewById(R.id.inClass04);
 
         InClass05_btn = findViewById(R.id.InClass05);
+
+        InClass06_btn = findViewById(R.id.InClass06);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,6 +94,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent newIntent = new Intent(MainActivity.this, InClass05.class);
+                startActivity(newIntent);
+            }
+        });
+
+        InClass06_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent newIntent = new Intent(MainActivity.this, InClass06.class);
                 startActivity(newIntent);
             }
         });
