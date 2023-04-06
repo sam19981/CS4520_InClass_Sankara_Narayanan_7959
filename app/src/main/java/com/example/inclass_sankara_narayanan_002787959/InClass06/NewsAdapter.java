@@ -1,7 +1,6 @@
 package com.example.inclass_sankara_narayanan_002787959.InClass06;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -59,10 +58,10 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            this.tittle = itemView.findViewById(R.id.Ntitle);
-            this.author = itemView.findViewById(R.id.Nauthor);
+            this.tittle = itemView.findViewById(R.id.msgUserNameId);
+            this.author = itemView.findViewById(R.id.chatmessageId);
             this.imgView = itemView.findViewById(R.id.NnewsImg);
-            this.cardview = itemView.findViewById(R.id.main_container);
+            this.cardview = itemView.findViewById(R.id.chatContainer);
             this.v =itemView;
         }
     }

@@ -2,7 +2,7 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main_container"
+    android:id="@+id/chatContainer"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
@@ -19,7 +19,7 @@
             android:layout_weight="2"
             android:orientation="vertical">
             <TextView
-                android:id="@+id/Ntitle"
+                android:id="@+id/msgUserNameId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
@@ -28,7 +28,7 @@
 
             </TextView>
             <TextView
-                android:id="@+id/Nauthor"
+                android:id="@+id/chatmessageId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
