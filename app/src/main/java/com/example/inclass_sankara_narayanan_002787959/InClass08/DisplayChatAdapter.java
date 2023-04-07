@@ -87,6 +87,7 @@ public class DisplayChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
             else {
                 this.message.setVisibility(View.VISIBLE);
                 this.message.setText(message.getMessage());
+                sendImg.setVisibility(View.GONE);
             }
         }
     }
@@ -124,11 +125,11 @@ public class DisplayChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
             if(message.getMessageType().equals("Image"))
             {   sendImage.setVisibility(View.VISIBLE);
                 Glide.with(cardView.getContext()).load(message.getMessage()).into(sendImage);
-                this.message.setVisibility(View.INVISIBLE);
             }
             else {
                 this.message.setVisibility(View.VISIBLE);
                 this.message.setText(message.getMessage());
+                sendImage.setVisibility(View.GONE);
             }
         }
     }

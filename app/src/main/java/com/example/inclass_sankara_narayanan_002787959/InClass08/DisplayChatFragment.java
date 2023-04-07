@@ -317,7 +317,8 @@ public class DisplayChatFragment extends Fragment implements InClass08.DisplayTa
 
     @Override
     public void displayphotoFromgallery(Uri URI) {
-
+        SendImage sendImgins = (SendImage)getContext();
+        sendImgins.send(URI,mParam2,mParam1,currentConversation);
     }
 
 

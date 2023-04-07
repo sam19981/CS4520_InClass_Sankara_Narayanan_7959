@@ -13,7 +13,9 @@ import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
+import android.text.Editable;
 import android.text.TextUtils;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -60,6 +62,8 @@ public class SignUpFragment extends Fragment implements InClass08.DisplayTakenPh
     ImageView profilePic;
     TextInputEditText etRegEmail;
     TextInputEditText etRegPassword;
+
+    TextInputEditText ReetRegPassword;
     TextInputEditText euserName;
     TextView tvLoginHere;
     Button btnRegister;
@@ -119,6 +123,29 @@ public class SignUpFragment extends Fragment implements InClass08.DisplayTakenPh
         tvLoginHere = view.findViewById(R.id.tvLoginHere);
         btnRegister = view.findViewById(R.id.btnRegister);
         euserName = view.findViewById(R.id.eUserName);
+        ReetRegPassword = view.findViewById(R.id.ReetRegPass);
+        btnRegister.setEnabled(false);
+
+        ReetRegPassword.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {}
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                String password = etRegPassword.getText().toString();
+                String confirmPassword = s.toString();
+
+                if (!confirmPassword.equals(password)) {
+                    ReetRegPassword.setError("Passwords do not match");
+                } else {
+                    ReetRegPassword.setError(null);
+                    btnRegister.setEnabled(true);
+                }
+            }
+        });
 
         if(URI!= null)
         {
@@ -198,6 +225,10 @@ public class SignUpFragment extends Fragment implements InClass08.DisplayTakenPh
         {
             euserName.setError("Username is empty");
             euserName.requestFocus();
+        }
+        else if(URI==null)
+        {
+            Toast.makeText(getContext(), "Please set a Profile Pic", Toast.LENGTH_SHORT).show();
         }
         else{
             mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
